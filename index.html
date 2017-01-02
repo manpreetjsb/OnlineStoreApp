@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="gemStore">
+<head>
+<title>Testing App</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+	
+</head>
+
+<body ng-controller="productDetails as productCtrl">
+<div class="container">
+	<div class="row">
+  		<h1>Our Products</h1>
+	</div>
+	<div class="row">
+		<div class="col-lg-3"></div>
+		<div class="col-lg-6">
+		<div ng-repeat="product in productCtrl.products">
+			<h3>{{product.name}}
+			<span class="pull-right">Price : {{product.price | currency}}</span></h3>
+			<div ng-controller="GalleryController as gallery">
+				<div class="img-wrap">
+					<img ng-src="{{product.images[gallery.img]}}" class="bigsize" />
+				</div>
+				<ul class="list-inline img-thumbnails clearfix">
+					<li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+						<img ng-src="{{image}}" class="" ng-click="gallery.changeImage($index)" />
+					</li>
+				</ul>
+			</div>
+			<!-- tabs -->
+			<product-tabs></product-tabs>
+		</div>
+		<div class="col-lg-3"></div>
+		
+	</div>
+</div>
+</body>
+</html>

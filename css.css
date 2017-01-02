@@ -1,0 +1,27 @@
+.bigsize{
+	width: 300px; height: 300px;
+}
+li.small-image {
+    width: 50px;
+}
+.img-thumbnails .thumbnail {
+    background: #f8f8f8;
+    border: 0;
+    margin-right: 25px;
+    min-height: 50px;
+}
+.img-wrap {
+    background: #f8f8f8;
+    margin: 20px auto 20px;
+    width: 300px;
+}
+.img-thumbnails {
+    margin: 0 auto;
+    width: 300px;
+}
+.ng-invalid.ng-dirty{
+	border-color: #fa787e;
+}
+.ng-valid.ng-dirty{
+	border-color: #78fa89;
+}
