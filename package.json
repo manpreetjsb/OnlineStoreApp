@@ -1,0 +1,23 @@
+{
+  "name": "onlinestoreapp",
+  "version": "1.0.0",
+  "description": "showing products online",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manpreetjsb/OnlineStoreApp.git"
+  },
+  "author": "manpreet singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manpreetjsb/OnlineStoreApp/issues"
+  },
+  "homepage": "https://github.com/manpreetjsb/OnlineStoreApp#readme",
+  "dependencies": {
+    "angular": "1.5.6",
+	"http-server": "^0.9.0"
+  }
+}
