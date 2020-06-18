@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/manpreetjsb/OnlineStoreApp#readme",
   "dependencies": {
-    "angular": "1.6.0",
+    "angular": "1.8.0",
 	"http-server": "^0.9.0"
   }
 }
